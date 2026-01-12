@@ -41,7 +41,11 @@ def main():
     # Sidebar
     with st.sidebar:
         st.header("⚙️ Configuration")
-        api_key = st.text_input("YouTube Data API Key", type="password", help="Get one from Google Cloud Console")
+        user_api_key = st.text_input("YouTube Data API Key(optional)", type="password", help="Get one from Google Cloud Console")
+        if user_api_key:
+            api_key = user_api_key
+        else:
+            api_key = st.secrets["YOUTUBE_API_KEY"]
         st.info("Note: The API Key is required to fetch new data.")
         
         st.divider()
@@ -177,3 +181,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
