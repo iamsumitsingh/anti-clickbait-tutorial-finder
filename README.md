@@ -52,3 +52,9 @@ This project implements an end-to-end Data Engineering pipeline to identify "Hid
 *   **Hidden Gem**: Engagement > 3% AND Views < 100k
 *   **Overhyped**: Engagement < 1% AND Views > 500k
 
+**Live Demo:**  
+ https://anti-clickbait-tutorial-finder-ny2fircrmzqy79l2zyffkc.streamlit.app/
+
+> Note: The app runs using a secure backend YouTube API key.
+> Advanced users may optionally provide their own API key to override it.
+
