@@ -1,6 +1,7 @@
 altair==4.2.2
 google-api-python-client
 pandas
-streamlit
+streamlit==1.29.0
 isodate
+
 
